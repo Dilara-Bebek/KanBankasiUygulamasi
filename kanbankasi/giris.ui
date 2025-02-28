@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>510</width>
+    <height>629</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>70</y>
+      <width>381</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 2px solid black;  /* Siyah renkte 2 piksel kalınlığında kenar */
+    border-radius: 10px;  /* Kenarları oval yapmak için */
+    margin-top: 20px;  /* Başlıkla kutu arasında boşluk */
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;  /* Başlığın kenarlarla olan hizasını ayarlamak için */
+    subcontrol-position: top center;  /* Başlığı yukarıda ve ortada konumlandırmak için */
+    padding: 0 5px;  /* Başlığın etrafında boşluk
+</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLineEdit" name="lneGirisKullaniciAdi">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>331</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #ffccd5;
+</string>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblGirisKullanciAdi">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: white;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Kullanıcı Adı</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="psbGirisGiris">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>220</y>
+       <width>141</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: black;
+    color: white;
+}
+QPushButton:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #CCCCCC, stop:1 #333333); /* Tıklanınca arka plan geçişi gri tonlarında oluyor */
+    border: 2px solid #333333; /* Tıklanınca kenarlık koyu gri oluyor */
+    transform: scale(0.95); /* Tıklanınca buton biraz küçülüyor */
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>GİRİŞ YAP</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblGirisVeya">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>266</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: white;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>veya</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="psbKayit">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>310</y>
+       <width>141</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>true</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: lightgray;
+    color: black;
+}
+QPushButton:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #CCCCCC, stop:1 #333333); /* Tıklanınca arka plan geçişi gri tonlarında oluyor */
+    border: 2px solid #333333; /* Tıklanınca kenarlık koyu gri oluyor */
+    transform: scale(0.95); /* Tıklanınca buton biraz küçülüyor */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>KAYIT OL</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lneGirisSifre">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>331</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #ffccd5;
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblGirisSifre">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: white;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Şifre</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-1180</x>
+      <y>-350</y>
+      <width>1701</width>
+      <height>1341</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Resimler/Ekran Görüntüleri/alyuvar5.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>60</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>KULLANICI GİRİŞ</string>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>label_2</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>510</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHAKKINDA">
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QMenu {
+    background-color: #2e2e2e; /* Menü arka plan rengi */
+    color: #ffffff; /* Metin rengi */
+    border: 1px solid #4d4d4d; /* Kenar rengi */
+    border-radius: 8px; /* Köşeleri yuvarlama */
+    padding: 8px; /* İçerik ile kenar arasındaki boşluk */
+}
+
+QMenu::item {
+    background-color: transparent; /* Öğelerin arka planı */
+    padding: 5px 30px; /* Öğelerin iç boşluğu */
+    margin: 2px 0px; /* Öğeler arasındaki boşluk */
+    border-radius: 4px; /* Öğelerin köşe yuvarlama */
+}
+
+QMenu::item:selected {
+    background-color: #4d4d4d; /* Üzerine gelindiğinde arka plan rengi */
+    color: #ffffff; /* Üzerine gelindiğinde metin rengi */
+}
+
+QMenu::separator {
+    height: 1px; /* Ayırıcı çizgi yüksekliği */
+    background-color: #707070; /* Ayırıcı çizgi rengi */
+    margin: 4px 8px; /* Ayırıcı çizgi ve kenar arasındaki boşluk */
+}
+
+QMenu::indicator {
+    width: 1px; /* Genişlik */
+    height: 12px; /* Yükseklik */
+}
+
+QMenu::
+</string>
+    </property>
+    <property name="title">
+     <string>HAKKINDA</string>
+    </property>
+    <addaction name="actionMisyonumuz_Hayat_kurtarmak_i_in_kan_ba_n_te_vik_ederek_toplum_sa_l_n_iyile_tirmek_ve_ihtiyac_olan_hastalara_g_venli_kan_temin_etmek"/>
+    <addaction name="separator"/>
+    <addaction name="actionVizyonumuz_Kan_ba_n_n_yayg_nla_t_herkesin_ba_oldu_u_ve_hi_bir_hastan_n_kan_ihtiyac_ya_amayaca_bir_d_nya_yaratmak"/>
+    <addaction name="separator"/>
+    <addaction name="actionHer_Hakk_Sakl_d_r_2026"/>
+   </widget>
+   <widget class="QMenu" name="menuYARDIM">
+    <property name="styleSheet">
+     <string notr="true">QMenu {
+    background-color: #2e2e2e; /* Menü arka plan rengi */
+    color: #ffffff; /* Metin rengi */
+    border: 1px solid #4d4d4d; /* Kenar rengi */
+    border-radius: 8px; /* Köşeleri yuvarlama */
+    padding: 8px; /* İçerik ile kenar arasındaki boşluk */
+}
+
+QMenu::item {
+    background-color: transparent; /* Öğelerin arka planı */
+    padding: 5px 30px; /* Öğelerin iç boşluğu */
+    margin: 2px 0px; /* Öğeler arasındaki boşluk */
+    border-radius: 4px; /* Öğelerin köşe yuvarlama */
+}
+
+QMenu::item:selected {
+    background-color: #4d4d4d; /* Üzerine gelindiğinde arka plan rengi */
+    color: #ffffff; /* Üzerine gelindiğinde metin rengi */
+}
+
+QMenu::separator {
+    height: 1px; /* Ayırıcı çizgi yüksekliği */
+    background-color: #707070; /* Ayırıcı çizgi rengi */
+    margin: 4px 8px; /* Ayırıcı çizgi ve kenar arasındaki boşluk */
+}
+
+QMenu::indicator {
+    width: 1px; /* Genişlik */
+    height: 12px; /* Yükseklik */
+}
+
+QMenu::
+</string>
+    </property>
+    <property name="title">
+     <string>YARDIM</string>
+    </property>
+    <addaction name="action_leti_im"/>
+    <addaction name="separator"/>
+    <addaction name="actionE_POSTA_dilarabebek4_gmail_com"/>
+   </widget>
+   <addaction name="menuHAKKINDA"/>
+   <addaction name="menuYARDIM"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_6">
+   <property name="text">
+    <string>2024</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>andkdks</string>
+   </property>
+  </action>
+  <action name="actionKan_Bankas_Uygulamas_Kan_Bankas_Uygulamas_kan_ba_yapmak_isteyen_g_n_ll_ler_ile_kan_ihtiyac_olan_kurum_ve_ki_ileri_bir_araya_getirmek_amac_yla_geli_tirilmi_tir_Bu_uygulama_kan_ba_yapma_s_recini_kolayla_t_rmak_ve_toplumda_kan_ba_bilincini_art_rmak_i_in_tasarlanm_t_r_Her_Hakk_Sakl_d_r_2024">
+   <property name="text">
+    <string>Kan Bankası Uygulaması
+
+Kan Bankası Uygulaması, kan bağışı yapmak isteyen gönüllüler ile kan ihtiyacı olan kurum ve kişileri bir araya getirmek amacıyla geliştirilmiştir. Bu uygulama, kan bağışı yapma sürecini kolaylaştırmak ve toplumda kan bağışı bilincini artırmak için tasarlanmıştır.
+
+Her Hakkı Saklıdır © 2024</string>
+   </property>
+  </action>
+  <action name="actionKan_Bankas_Uygulamas_Kan_Bankas_Uygulamas_kan_ba_yapmak_isteyen_g_n_ll_ler_ile_kan_ihtiyac_olan_kurum_ve_ki_ileri_bir_araya_getirmek_amac_yla_geli_tirilmi_tir_Bu_uygulama_kan_ba_yapma_s_recini_kolayla_t_rmak_ve_toplumda_kan_ba_bilincini_art_rmak_i_in_tasarlanm_t_r_Her_Hakk_Sakl_d_r_2025">
+   <property name="text">
+    <string>Kan Bankası Uygulaması
+
+Kan Bankası Uygulaması, kan bağışı yapmak isteyen gönüllüler ile kan ihtiyacı olan kurum ve kişileri bir araya getirmek amacıyla geliştirilmiştir. Bu uygulama, kan bağışı yapma sürecini kolaylaştırmak ve toplumda kan bağışı bilincini artırmak için tasarlanmıştır.
+
+Her Hakkı Saklıdır © 2024</string>
+   </property>
+  </action>
+  <action name="actionKan_Bankas_Uygulamas_Kan_Bankas_Uygulamas_kan_ba_yapmak_isteyen_g_n_ll_ler_ile_kan_ihtiyac_olan_kurum_ve_ki_ileri_bir_araya_getirmek_amac_yla_geli_tirilmi_tir_Bu_uygulama_kan_ba_yapma_s_recini_kolayla_t_rmak_ve_toplumda_kan_ba_bilincini_art_rmak_i_in_tasarlanm_t_r_Her_Hakk_Sakl_d_r_2026">
+   <property name="text">
+    <string>Kan Bankası Uygulaması 
+
+Kan Bankası Uygulaması,  
+
+kan bağışı yapmak isteyen 
+
+ gönüllüler ile kan ihtiyacı  
+
+olan kurum ve kişileri bir  
+
+araya getirmek amacıyla 
+
+ geliştirilmiştir. Bu uygulama, 
+
+ kan bağışı yapma sürecini  
+
+kolaylaştırmak ve toplumda 
+
+ kan bağışı bilincini artırmak 
+
+ için tasarlanmıştır. 
+
+Her Hakkı Saklıdır © 2024 </string>
+   </property>
+  </action>
+  <action name="actionKan_Bankas_Uygulamas">
+   <property name="text">
+    <string>Kan Bankası Uygulaması kan bağışı yapmak isteyen  </string>
+   </property>
+  </action>
+  <action name="actionkan_ba_yapmak_isteyen">
+   <property name="text">
+    <string>kan bağışı yapmak isteyen </string>
+   </property>
+  </action>
+  <action name="action_g_n_ll_ler_ile_kan_ihtiyac">
+   <property name="text">
+    <string> gönüllüler ile kan ihtiyacı  </string>
+   </property>
+  </action>
+  <action name="actionolan_kurum_ve_ki_ileri_bir">
+   <property name="text">
+    <string>olan kurum ve kişileri bir  </string>
+   </property>
+  </action>
+  <action name="actionaraya_getirmek_amac_yla">
+   <property name="text">
+    <string>araya getirmek amacıyla</string>
+   </property>
+  </action>
+  <action name="actiongeli_tirilmi_tir_Bu_uygulama">
+   <property name="text">
+    <string>geliştirilmiştir. Bu uygulama,</string>
+   </property>
+  </action>
+  <action name="actiong_n_ll_ler_ile_kan_ihtiyac_olan_kurum_ve_ki_ileri_bir">
+   <property name="text">
+    <string>gönüllüler ile kan ihtiyacı
+olan kurum ve kişileri bir</string>
+   </property>
+  </action>
+  <action name="actionaraya_getirmek_amac_yla_geli_tirilmi_tir_Bu_uygulama">
+   <property name="text">
+    <string>araya getirmek amacıyla geliştirilmiştir. Bu uygulama, </string>
+   </property>
+  </action>
+  <action name="actionkan_ba_yapma_s_recini_kolayla_t_rmak_ve_toplumda">
+   <property name="text">
+    <string>kan bağışı yapma sürecini kolaylaştırmak ve toplumda </string>
+   </property>
+  </action>
+  <action name="action_kan_ba_bilincini_art_rmak_i_in_tasarlanm_t_r">
+   <property name="text">
+    <string> kan bağışı bilincini artırmak için tasarlanmıştır.</string>
+   </property>
+  </action>
+  <action name="actionHer_Hakk_Sakl_d_r_2025">
+   <property name="text">
+    <string>Her Hakkı Saklıdır © 2024 </string>
+   </property>
+  </action>
+  <action name="actionMisyonumuz_Hayat_kurtarmak_i_in_kan_ba_n_te_vik_ederek_toplum_sa_l_n_iyile_tirmek_ve_ihtiyac_olan_hastalara_g_venli_kan_temin_etmek">
+   <property name="text">
+    <string>MİSYONUMUZ;
+Hayat kurtarmak için kan bağışını teşvik ederek, toplum sağlığını iyileştirmek ve ihtiyacı olan hastalara güvenli kan temin etmek.</string>
+   </property>
+  </action>
+  <action name="actionVizyonumuz_Kan_ba_n_n_yayg_nla_t_herkesin_ba_oldu_u_ve_hi_bir_hastan_n_kan_ihtiyac_ya_amayaca_bir_d_nya_yaratmak">
+   <property name="text">
+    <string>VİZYONUMUZ;
+Kan bağışının yaygınlaştığı, herkesin bağışçı olduğu ve hiçbir hastanın kan ihtiyacı yaşamayacağı bir dünya yaratmak.</string>
+   </property>
+  </action>
+  <action name="actionHer_Hakk_Sakl_d_r_2026">
+   <property name="text">
+    <string>Her Hakkı Saklıdır © 2024 </string>
+   </property>
+  </action>
+  <action name="action_leti_im">
+   <property name="text">
+    <string>İletişim;</string>
+   </property>
+  </action>
+  <action name="actionE_POSTA_dilarabebek4_gmail_com">
+   <property name="text">
+    <string>E-POSTA: dilarabebek4@gmail.com</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

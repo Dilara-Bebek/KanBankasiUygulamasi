@@ -1,0 +1,2353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1398</width>
+    <height>791</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1381</width>
+      <height>751</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    background-color: #FFEBEE;
+}
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>KULLANICI BİLGİLERİ</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>-410</x>
+        <y>-40</y>
+        <width>1791</width>
+        <height>761</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    background-color: #FFEBEE;
+}
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>300</y>
+         <width>55</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QWidget" name="formLayoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>560</y>
+         <width>451</width>
+         <height>123</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_5">
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="lblAcilIletisimBilgi">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>ACİL İLETİŞİM BİLGİLERİ</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="lblYakinAdi">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Yakınınızın Adı:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lneYakinAdi">
+          <property name="inputMask">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="lblYakinSoyadi">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Yakınınızın Soyadı:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lneYakinSoyadi">
+          <property name="inputMask">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="lblYakinTelefon">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Yakınınızın Telefon Numarası:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="lneYakinTelefon">
+          <property name="inputMask">
+           <string>(999) 999-9999;_</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="formLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>70</y>
+         <width>451</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_3">
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="lblBagisciBilgi">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>BAĞIŞÇI BİLGİLERİ</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="lblBagisciAdi">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Bağışçı Adı:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lneBagisciAdi">
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="lblBagisciSoyadi">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Bağışçı Soyadı:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lneBagisciSoyadi">
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="lblTc">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>TC Kimlik Numarası:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="lneTc">
+          <property name="inputMask">
+           <string>99999999999;_</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="lblCinsiyet">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Cinsiyet:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QComboBox" name="cmbCinsiyet">
+          <property name="currentText">
+           <string/>
+          </property>
+          <property name="currentIndex">
+           <number>-1</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>KADIN</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ERKEK</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QDateEdit" name="dteDogumTarihi">
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="lblDogumTarihi">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Doğum Tarihi:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="formLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>360</y>
+         <width>451</width>
+         <height>133</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_4">
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="lblIletisimBilgi">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>BAĞIŞÇI İLETİŞİM BİLGİLERİ</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="lblBagisciTelefon">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Bağışçının Telefon Numarası:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lneBagisciTelefon">
+          <property name="inputMask">
+           <string>(999) 999-9999;_</string>
+          </property>
+          <property name="text">
+           <string>() -</string>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="lblBagisciEposta">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Bağışçının E-posta Adresi:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lneBagisciEposta">
+          <property name="placeholderText">
+           <string>örn:isim@ornek.com</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="lblBagisciEv">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Bağışçının Ev Adresi:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="lneBagisciEv"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>140</y>
+         <width>1391</width>
+         <height>1001</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Resimler/Ekran Görüntüleri/kan5.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_4</zorder>
+      <zorder>label_18</zorder>
+      <zorder>formLayoutWidget_5</zorder>
+      <zorder>formLayoutWidget_3</zorder>
+      <zorder>formLayoutWidget_4</zorder>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>TIBBİ BİLGİLER</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>-80</x>
+        <y>-50</y>
+        <width>1461</width>
+        <height>771</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    background-color: #FFEBEE;
+}
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>300</y>
+         <width>55</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QWidget" name="formLayoutWidget_6">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>500</y>
+         <width>531</width>
+         <height>155</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_6">
+        <item row="2" column="0" colspan="2">
+         <widget class="QTextEdit" name="txeNotBilgisi"/>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="lblOnemliBilgi">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>ÖNEMLİ BİLGİLER</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLabel" name="lblNotBilgisi">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string> Notunuz(ekstra bilgiler için)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="formLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>80</y>
+         <width>531</width>
+         <height>331</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_2">
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="lblTibbiBilgiler">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>TIBBİ BİLGİLER</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="lblKilo">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Kilo(Kg):</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="spnKilo">
+          <property name="minimum">
+           <number>45</number>
+          </property>
+          <property name="maximum">
+           <number>150</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="value">
+           <number>45</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="lblBoy">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Boy(cm):</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lneBoy">
+          <property name="inputMask">
+           <string>999;_</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="lblKronikHastalik">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Kronik Hastalığım var.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QCheckBox" name="chkbKronikHastalik">
+          <property name="text">
+           <string>Evet</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="lblIlac">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Düzenli Kullandığım bir ilaç var.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QCheckBox" name="chkbIlac">
+          <property name="text">
+           <string>Evet</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="lblAlerji">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Alerjim var.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QCheckBox" name="chkbAlerji">
+          <property name="text">
+           <string>Evet</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="lblSigara">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Sigara veya Alkol Kullanıyorum.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QCheckBox" name="chkbSigara">
+          <property name="text">
+           <string>Evet</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="lblGecmisMudahale">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Geçmişteki Cerrahi Müdahaleler:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QTextEdit" name="txeGecmisMudahale"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>-470</x>
+         <y>50</y>
+         <width>1951</width>
+         <height>781</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Resimler/Ekran Görüntüleri/kan14.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_5</zorder>
+      <zorder>label_19</zorder>
+      <zorder>formLayoutWidget_6</zorder>
+      <zorder>formLayoutWidget_2</zorder>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>BAĞIŞ YAP</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>0</y>
+        <width>1391</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    background-color: #FFEBEE;
+}
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>300</y>
+         <width>55</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QWidget" name="formLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>491</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="lblBagisBilgi">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>BAĞIŞ BİLGİLERİ</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="lblKanGrubu">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Kan Grubu:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="cmbKanGrubu">
+          <property name="currentIndex">
+           <number>-1</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>A Kan Grubu</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>B Kan Grubu</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>AB Kan Grubu</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0 Kan Grubu</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="lblRhFaktoru">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Rh Faktörü:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="cmbRhFaktoru">
+          <property name="currentIndex">
+           <number>-1</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>Rh+</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rh-</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="lblBagisTuru">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Bağış Türü:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QComboBox" name="cmbBagisTuru">
+          <property name="currentIndex">
+           <number>-1</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>Kan Bağışı</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Aferez Bağışı</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>İmmun Plazma Bağışı</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kök Hücre Bağışı</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="lblSehir">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Bağış Yapacağınız Şehir:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QComboBox" name="cmbSehir">
+          <property name="currentIndex">
+           <number>-1</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>Adana</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Adıyaman</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Afyonkarahisar</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ağrı</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Aksaray</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Amasya</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ankara</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Antalya</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ardahan</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Artvin</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Aydın</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Balıkesir</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bartın</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Batman </string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bayburt</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bilecik</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bingöl</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bitlis</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bolu</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Burdur</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bursa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Çanakkale</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Çankırı</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Çorum</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Denizli</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Diyarbakır</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Düzce</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Edirne</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Elazığ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Erzincan</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Erzurum</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Eskişehir</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Gaziantep</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Giresun</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Gümüşhane</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Hakkari</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Hatay</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Iğdır</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Isparta</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>İstanbul</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>İzmir</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kahramanmaraş</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Karabük</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Karaman</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kars</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kastamonu</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kayseri</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kırıkkale</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kırklareli</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kırşehir</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kilis</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kocaeli</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Konya</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kütahya</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Malatya</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Manisa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Mardin</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Mersin</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Muğla</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Muş</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Nevşehir</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Niğde</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ordu</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Osmaniye</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rize</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sakarya</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Samsun</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Siirt</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sinop</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sivas</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Şanlıurfa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Şırnak</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tekirdağ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tokat</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Trabzon</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tunceli</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Uşak</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Van</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Yalova</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Yozgat</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Zonguldak</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="lblIlkKanBagisi">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>İlk Defa  Kan Bağışı Yapıyorum</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>(Gün/Ay/Yıl)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="lneSonKanBagisiTarihi">
+          <property name="inputMask">
+           <string>99/99/9999</string>
+          </property>
+          <property name="text">
+           <string>00/00/0000</string>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="lblSonKanBagisiTarihi">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>En Son Ki Kan Bağış Tarihi:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>(Daha önce yapıldıysa)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QCheckBox" name="chkblkKanBagisi">
+          <property name="text">
+           <string>Evet</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>1070</x>
+         <y>320</y>
+         <width>291</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QPushButton" name="psbRandevuAl">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 red, stop:1 white); /* Arka plan geçişi */
+    border: 2px solid transparent;  /* Şeffaf kenar */
+    border-radius: 15px;  /* Oval köşeler */
+    padding: 5px;  /* İç kenar boşluğu */
+    border-image: linear-gradient(to right, red, white) 1;  /* Kenar geçişi */
+}
+
+QPushButton:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 white, stop:1 red); /* Tıklanınca arka plan geçişi tersine dönüyor */
+    border: 2px solid red; /* Tıklanınca kenarlık kırmızı oluyor */
+    transform: scale(0.95); /* Tıklanınca buton biraz küçülüyor */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Randevu Al</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="psRandevuAra">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 red, stop:1 white); /* Arka plan geçişi */
+    border: 2px solid transparent;  /* Şeffaf kenar */
+    border-radius: 15px;  /* Oval köşeler */
+    padding: 5px;  /* İç kenar boşluğu */
+    border-image: linear-gradient(to right, red, white) 1;  /* Kenar geçişi */
+}
+
+QPushButton:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 white, stop:1 red); /* Tıklanınca arka plan geçişi tersine dönüyor */
+    border: 2px solid red; /* Tıklanınca kenarlık kırmızı oluyor */
+    transform: scale(0.95); /* Tıklanınca buton biraz küçülüyor */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Randevu Ara</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="psGuncelle">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 red, stop:1 white); /* Arka plan geçişi */
+    border: 2px solid transparent;  /* Şeffaf kenar */
+    border-radius: 15px;  /* Oval köşeler */
+    padding: 5px;  /* İç kenar boşluğu */
+    border-image: linear-gradient(to right, red, white) 1;  /* Kenar geçişi */
+}
+
+QPushButton:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 white, stop:1 red); /* Tıklanınca arka plan geçişi tersine dönüyor */
+    border: 2px solid red; /* Tıklanınca kenarlık kırmızı oluyor */
+    transform: scale(0.95); /* Tıklanınca buton biraz küçülüyor */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Güncelle</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="psRandevuListele">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 red, stop:1 white); /* Arka plan geçişi */
+    border: 2px solid transparent;  /* Şeffaf kenar */
+    border-radius: 15px;  /* Oval köşeler */
+    padding: 5px;  /* İç kenar boşluğu */
+    border-image: linear-gradient(to right, red, white) 1;  /* Kenar geçişi */
+}
+
+QPushButton:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 white, stop:1 red); /* Tıklanınca arka plan geçişi tersine dönüyor */
+    border: 2px solid red; /* Tıklanınca kenarlık kırmızı oluyor */
+    transform: scale(0.95); /* Tıklanınca buton biraz küçülüyor */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Randevu Listele</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="psCikis">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 red, stop:1 white); /* Arka plan geçişi */
+    border: 2px solid transparent;  /* Şeffaf kenar */
+    border-radius: 15px;  /* Oval köşeler */
+    padding: 5px;  /* İç kenar boşluğu */
+    border-image: linear-gradient(to right, red, white) 1;  /* Kenar geçişi */
+}
+
+QPushButton:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 white, stop:1 red); /* Tıklanınca arka plan geçişi tersine dönüyor */
+    border: 2px solid red; /* Tıklanınca kenarlık kırmızı oluyor */
+    transform: scale(0.95); /* Tıklanınca buton biraz küçülüyor */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Çıkış</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="formLayoutWidget_7">
+       <property name="geometry">
+        <rect>
+         <x>870</x>
+         <y>20</y>
+         <width>491</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_7">
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="lblKanRandevuTarihi">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string> KAN BAĞIŞI İÇİN RANDEVU TARİHİ SEÇİNİZ</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="Line" name="line_7">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QCalendarWidget" name="cldwKanBagisTarihi"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>-1170</x>
+         <y>310</y>
+         <width>2191</width>
+         <height>771</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Resimler/Ekran Görüntüleri/kan11.png</pixmap>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>KAYIT BİLGİLERİ</string>
+     </attribute>
+     <widget class="QTableWidget" name="tblwKayitTutucu">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>1371</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QHeaderView::section {
+    background-color: lightgray;
+    padding: 4px;
+    font-size: 7pt;
+}
+QTableWidget {
+    gridline-color: black;
+    font-size: 7pt;
+}
+QTableWidget::item {
+    padding: 5px;
+}
+&quot;&quot;&quot;)
+</string>
+      </property>
+      <property name="rowCount">
+       <number>100</number>
+      </property>
+      <property name="columnCount">
+       <number>27</number>
+      </property>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>-50</x>
+        <y>-40</y>
+        <width>1431</width>
+        <height>761</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    background-color: #FFEBEE;
+}
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>300</y>
+         <width>55</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="psRavdevuSil">
+       <property name="geometry">
+        <rect>
+         <x>1128</x>
+         <y>630</y>
+         <width>291</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 red, stop:1 white); /* Arka plan geçişi */
+    border: 2px solid transparent;  /* Şeffaf kenar */
+    border-radius: 15px;  /* Oval köşeler */
+    padding: 5px;  /* İç kenar boşluğu */
+    border-image: linear-gradient(to right, red, white) 1;  /* Kenar geçişi */
+}
+
+QPushButton:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 white, stop:1 red); /* Tıklanınca arka plan geçişi tersine dönüyor */
+    border: 2px solid red; /* Tıklanınca kenarlık kırmızı oluyor */
+    transform: scale(0.95); /* Tıklanınca buton biraz küçülüyor */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Randevu Sil</string>
+       </property>
+      </widget>
+     </widget>
+     <zorder>groupBox_6</zorder>
+     <zorder>tblwKayitTutucu</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>BİLGİ KUTUSU</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>-70</x>
+        <y>0</y>
+        <width>1451</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    background-color: #FFEBEE;
+}
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>300</y>
+         <width>55</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>40</y>
+         <width>1131</width>
+         <height>591</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox {
+    background-color: #FFCCCC;  /* Arka plan rengini açık kırmızı yapar */
+    border: 1px solid gray;  /* İsteğe bağlı olarak kenarlık ekleyebilirsiniz */
+    border-radius: 5px;  /* Köşeleri yuvarlatmak için */
+    margin-top: 20px;  /* Grup başlığının üstüne boşluk bırakmak için */
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;  /* Başlık pozisyonunu ortalayın */
+    padding: 0 3px;
+    background-color: #FFCCCC;  /* Başlığın arka plan rengini aynı yapın */
+}
+</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QLabel" name="lblNedenKanBagisi">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>251</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>NEDEN KAN BAĞIŞLAMALIYIM ?</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="txeNedenKanBagisi">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>241</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:400; color:#ff0000;&quot;&gt;Bağışlanan 1 Ünite kan bağışı ile 3 farklı ihtiyaç sahibinin tedavisine katkıda bulunmuş olursunuz.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblAferez">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>70</y>
+          <width>281</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>AFEREZ BAĞIŞI NE İŞE YARAR?</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="txeAferez">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>100</y>
+          <width>251</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;Anemi,lösemi,karaciğer yetmezliği,organ nakli,kemik iliği nakli,lenfoma gibi önem arz eden ve aciliyeti olan bu rahatsızlıkların tedavilerinde kullanılır.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblImmun">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>290</y>
+          <width>251</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>İMMUN PLAZMA BAĞIŞI NEDİR?</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="txeImmun">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>320</y>
+          <width>241</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;Covid-19 tanısı konulup,tedavi sürecinin ardından iyileşen kişilerden,kritik durumlarda olan hastalarda kullanılması için alınan kan bileşenidir.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblKokHucre">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>290</y>
+          <width>221</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>KÖK HÜCRE NAKLİ NEDİR?</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="txeKokHucre">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>320</y>
+          <width>251</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;Uygun donör bulunmasıyla kök hücrenin hasta kişiye(Lösemi Hastasına) nakil edilmesidir.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblHerBagis">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>510</y>
+          <width>361</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../../Resimler/Ekran Görüntüleri/resim16.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblAferez_2">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>70</y>
+          <width>441</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>HANGİ ARALIKLARLA KAN BAĞIŞINDA BULUNABİLİRİM?</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="txeAferez_2">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>100</y>
+          <width>421</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;Tam kan bağışında;Erkekler 90 günde bir , Kadınlar 120 gün de bir kan bağışında bulunabilirler.Aferez ve tam kan bağışı aralıkları hakkında detaylı bilgi için Ulusal Kan ve Kan Bileşenleri Hazırlama, Kullanım ve Kalite Güvencesi Rehberi 2016 (bkz. 73-74)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblKokHucre_2">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>290</y>
+          <width>311</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>KİMLER KAN BAĞIŞINDA BULUNABİLİR?</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="txeKokHucre_2">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>320</y>
+          <width>411</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;18-65 yaş aralığında 50 kilogramın üzerindeki her sağlıklı birey kan bağışçısı adayı olabilir. (19 yaşından gün almak, 65’ini doldurmamak gerekir.)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QTextEdit" name="txeBilgiKutusu">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+    background-color: #FFCCCC;  /* Arka plan rengini açık background-color: #FFCCCC;  /* Başlığın arka plan rengini aynı yapın *
+</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline; color:#aa0000;&quot;&gt;BİLGİ KUTUSU&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1398</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHAKKINDA">
+    <property name="styleSheet">
+     <string notr="true">QMenu {
+    background-color: #2e2e2e; /* Menü arka plan rengi */
+    color: #ffffff; /* Metin rengi */
+    border: 1px solid #4d4d4d; /* Kenar rengi */
+    border-radius: 8px; /* Köşeleri yuvarlama */
+    padding: 8px; /* İçerik ile kenar arasındaki boşluk */
+}
+
+QMenu::item {
+    background-color: transparent; /* Öğelerin arka planı */
+    padding: 5px 30px; /* Öğelerin iç boşluğu */
+    margin: 2px 0px; /* Öğeler arasındaki boşluk */
+    border-radius: 4px; /* Öğelerin köşe yuvarlama */
+}
+
+QMenu::item:selected {
+    background-color: #4d4d4d; /* Üzerine gelindiğinde arka plan rengi */
+    color: #ffffff; /* Üzerine gelindiğinde metin rengi */
+}
+
+QMenu::separator {
+    height: 1px; /* Ayırıcı çizgi yüksekliği */
+    background-color: #707070; /* Ayırıcı çizgi rengi */
+    margin: 4px 8px; /* Ayırıcı çizgi ve kenar arasındaki boşluk */
+}
+
+QMenu::indicator {
+    width: 12px; /* Genişlik */
+    height: 12px; /* Yükseklik */
+}
+
+QMenu::
+</string>
+    </property>
+    <property name="title">
+     <string>HAKKINDA</string>
+    </property>
+    <addaction name="actionM_SYONUMUZ_Hayat_kurtarmak_i_in_kan_ba_n_te_vik_ederek_toplum_sa_l_n_iyile_tirmek_ve_ihtiyac_olan_hastalara_g_venli_kan_temin_etmek"/>
+    <addaction name="separator"/>
+    <addaction name="actionV_ZYONUMUZ_Kan_ba_n_n_yayg_nla_t_herkesin_ba_oldu_u_ve_hi_bir_hastan_n_kan_ihtiyac_ya_amayaca_bir_d_nya_yaratmak"/>
+    <addaction name="separator"/>
+    <addaction name="actionHer_Hakk_Sakl_d_r_2024"/>
+   </widget>
+   <widget class="QMenu" name="menuYARDIM">
+    <property name="styleSheet">
+     <string notr="true">QMenu {
+    background-color: #2e2e2e; /* Menü arka plan rengi */
+    color: #ffffff; /* Metin rengi */
+    border: 1px solid #4d4d4d; /* Kenar rengi */
+    border-radius: 8px; /* Köşeleri yuvarlama */
+    padding: 8px; /* İçerik ile kenar arasındaki boşluk */
+}
+
+QMenu::item {
+    background-color: transparent; /* Öğelerin arka planı */
+    padding: 5px 30px; /* Öğelerin iç boşluğu */
+    margin: 2px 0px; /* Öğeler arasındaki boşluk */
+    border-radius: 4px; /* Öğelerin köşe yuvarlama */
+}
+
+QMenu::item:selected {
+    background-color: #4d4d4d; /* Üzerine gelindiğinde arka plan rengi */
+    color: #ffffff; /* Üzerine gelindiğinde metin rengi */
+}
+
+QMenu::separator {
+    height: 1px; /* Ayırıcı çizgi yüksekliği */
+    background-color: #707070; /* Ayırıcı çizgi rengi */
+    margin: 4px 8px; /* Ayırıcı çizgi ve kenar arasındaki boşluk */
+}
+
+QMenu::indicator {
+    width: 12px; /* Genişlik */
+    height: 12px; /* Yükseklik */
+}
+
+QMenu::
+</string>
+    </property>
+    <property name="title">
+     <string>YARDIM</string>
+    </property>
+    <addaction name="action_leti_im"/>
+    <addaction name="separator"/>
+    <addaction name="actionE_POSTA_dilarabebek4_gmail_com_2"/>
+   </widget>
+   <addaction name="menuHAKKINDA"/>
+   <addaction name="menuYARDIM"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionM_SYONUMUZ_Hayat_kurtarmak_i_in_kan_ba_n_te_vik_ederek_toplum_sa_l_n_iyile_tirmek_ve_ihtiyac_olan_hastalara_g_venli_kan_temin_etmek">
+   <property name="text">
+    <string>MİSYONUMUZ;
+Hayat kurtarmak için kan bağışını teşvik ederek, toplum sağlığını iyileştirmek ve ihtiyacı olan hastalara güvenli kan temin etmek.</string>
+   </property>
+  </action>
+  <action name="actionV_ZYONUMUZ_Kan_ba_n_n_yayg_nla_t_herkesin_ba_oldu_u_ve_hi_bir_hastan_n_kan_ihtiyac_ya_amayaca_bir_d_nya_yaratmak">
+   <property name="text">
+    <string>VİZYONUMUZ;
+Kan bağışının yaygınlaştığı, herkesin bağışçı olduğu ve hiçbir hastanın kan ihtiyacı yaşamayacağı bir dünya yaratmak.</string>
+   </property>
+  </action>
+  <action name="actionHer_Hakk_Sakl_d_r_2024">
+   <property name="text">
+    <string>Her Hakkı Saklıdır © 2024 </string>
+   </property>
+  </action>
+  <action name="action_leti_im">
+   <property name="text">
+    <string>İletişim;</string>
+   </property>
+  </action>
+  <action name="actionE_POSTA_dilarabebek4_gmail_com">
+   <property name="text">
+    <string>E-POSTA: dilarabebek4@gmail.com</string>
+   </property>
+  </action>
+  <action name="actionE_POSTA_dilarabebek4_gmail_com_2">
+   <property name="text">
+    <string>E-POSTA: dilarabebek4@gmail.com</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>510</width>
+    <height>641</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #bf4342;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-1130</x>
+      <y>-10</y>
+      <width>1631</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Resimler/Ekran Görüntüleri/kan18.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="grpKayit">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>70</y>
+      <width>371</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 2px solid black;  /* Siyah renkte 2 piksel kalınlığında kenar */
+    border-radius: 10px;  /* Kenarları oval yapmak için */
+    margin-top: 20px;  /* Başlıkla kutu arasında boşluk */
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;  /* Başlığın kenarlarla olan hizasını ayarlamak için */
+    subcontrol-position: top center;  /* Başlığı yukarıda ve ortada konumlandırmak için */
+    padding: 0 5px;  /* Başlığın etrafında boşluk
+</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="psbKayitKayit">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>257</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #220901; color:white 
+</string>
+     </property>
+     <property name="text">
+      <string>KAYIT OL</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lneKayitSifre">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>160</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #ffccd5;
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblKayitKullanciAdi">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>40</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Kullanıcı Adı</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblKayitSifre">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>140</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Şifre</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lneKayitKullaniciAdi">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #ffccd5;
+</string>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>231</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>KULLANICI KAYIT</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>510</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHAKKINDA">
+    <property name="styleSheet">
+     <string notr="true">QMenu {
+    background-color: #2e2e2e; /* Menü arka plan rengi */
+    color: #ffffff; /* Metin rengi */
+    border: 1px solid #4d4d4d; /* Kenar rengi */
+    border-radius: 8px; /* Köşeleri yuvarlama */
+    padding: 8px; /* İçerik ile kenar arasındaki boşluk */
+}
+
+QMenu::item {
+    background-color: transparent; /* Öğelerin arka planı */
+    padding: 5px 30px; /* Öğelerin iç boşluğu */
+    margin: 2px 0px; /* Öğeler arasındaki boşluk */
+    border-radius: 4px; /* Öğelerin köşe yuvarlama */
+}
+
+QMenu::item:selected {
+    background-color: #4d4d4d; /* Üzerine gelindiğinde arka plan rengi */
+    color: #ffffff; /* Üzerine gelindiğinde metin rengi */
+}
+
+QMenu::separator {
+    height: 1px; /* Ayırıcı çizgi yüksekliği */
+    background-color: #707070; /* Ayırıcı çizgi rengi */
+    margin: 4px 8px; /* Ayırıcı çizgi ve kenar arasındaki boşluk */
+}
+
+QMenu::indicator {
+    width: 12px; /* Genişlik */
+    height: 12px; /* Yükseklik */
+}
+
+QMenu::
+</string>
+    </property>
+    <property name="title">
+     <string>HAKKINDA</string>
+    </property>
+    <widget class="QMenu" name="menuM_SYONUMUZ_Hayat_kurtarmak_i_in_kan_ba_n_te_vik_ederek_toplum_sa_l_n_iyile_tirmek_ve_ihtiyac_olan_hastalara_g_venli_kan_temin_etmek">
+     <property name="title">
+      <string>MİSYONUMUZ;
+Hayat kurtarmak için kan bağışını teşvik ederek, toplum sağlığını iyileştirmek ve ihtiyacı olan hastalara güvenli kan temin etmek.</string>
+     </property>
+    </widget>
+    <addaction name="menuM_SYONUMUZ_Hayat_kurtarmak_i_in_kan_ba_n_te_vik_ederek_toplum_sa_l_n_iyile_tirmek_ve_ihtiyac_olan_hastalara_g_venli_kan_temin_etmek"/>
+    <addaction name="separator"/>
+    <addaction name="actionV_ZYONUMUZ_Kan_ba_n_n_yayg_nla_t_herkesin_ba_oldu_u_ve_hi_bir_hastan_n_kan_ihtiyac_ya_amayaca_bir_d_nya_yaratmak"/>
+    <addaction name="separator"/>
+    <addaction name="actionHer_Hakk_Sakl_d_r_2025"/>
+   </widget>
+   <widget class="QMenu" name="menuYARDIM">
+    <property name="styleSheet">
+     <string notr="true">QMenu {
+    background-color: #2e2e2e; /* Menü arka plan rengi */
+    color: #ffffff; /* Metin rengi */
+    border: 1px solid #4d4d4d; /* Kenar rengi */
+    border-radius: 8px; /* Köşeleri yuvarlama */
+    padding: 8px; /* İçerik ile kenar arasındaki boşluk */
+}
+
+QMenu::item {
+    background-color: transparent; /* Öğelerin arka planı */
+    padding: 5px 30px; /* Öğelerin iç boşluğu */
+    margin: 2px 0px; /* Öğeler arasındaki boşluk */
+    border-radius: 4px; /* Öğelerin köşe yuvarlama */
+}
+
+QMenu::item:selected {
+    background-color: #4d4d4d; /* Üzerine gelindiğinde arka plan rengi */
+    color: #ffffff; /* Üzerine gelindiğinde metin rengi */
+}
+
+QMenu::separator {
+    height: 1px; /* Ayırıcı çizgi yüksekliği */
+    background-color: #707070; /* Ayırıcı çizgi rengi */
+    margin: 4px 8px; /* Ayırıcı çizgi ve kenar arasındaki boşluk */
+}
+
+QMenu::indicator {
+    width: 12px; /* Genişlik */
+    height: 12px; /* Yükseklik */
+}
+
+QMenu::
+</string>
+    </property>
+    <property name="title">
+     <string>YARDIM</string>
+    </property>
+    <addaction name="action_leti_im"/>
+    <addaction name="separator"/>
+    <addaction name="actionE_POSTA_dilarabebek4_gmail_com"/>
+   </widget>
+   <addaction name="menuHAKKINDA"/>
+   <addaction name="menuYARDIM"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionBu_stil_sayfas_QMenu_n_n_genel_g_r_n_m_n_d_zenlerken_ayn_zamanda_alt_alta_metinleri_destekleyecek_ekilde_d_zenlenmi_tir_E_er_metinler_hala_yanyana_g_r_n_yorsa_HTML_etiketlerini_eklerken_d_zg_n_bi_imlendirilmi_oldu_undan_emin_olun">
+   <property name="text">
+    <string>Bu stil sayfası, QMenu'nün genel görünümünü düzenlerken aynı zamanda alt alta metinleri destekleyecek şekilde düzenlenmiştir. Eğer metinler hala yanyana görünüyorsa, HTML etiketlerini eklerken düzgün \n biçimlendirilmiş olduğundan emin olun.</string>
+   </property>
+   <property name="iconText">
+    <string>Bu stil sayfası, QMenu'nün genel
+ görünümünü düzenlerken aynı zamanda
+
+ alt alta metinleri destekleyecek şekilde düzenlenmiştir. Eğer metinler hala
+
+ yanyana görünüyorsa, HTML etiketlerini eklerken düzgün biçimlendirilmiş
+
+ olduğundan emin olun.</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Bu stil sayfası, QMenu'nün genel görünümünü düzenlerken aynı zamanda alt alta metinleri destekleyecek&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt; şekilde düzenlenmiştir.&lt;/p&gt;&lt;p&gt; Eğer metinler hala yanyana görünüyorsa, &lt;/p&gt;&lt;p&gt;HTML etiketlerini eklerken düzgün \n biçimlendirilmiş olduğundan emin olun.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="actionHer_Hakk_Sakl_d_r_2024">
+   <property name="text">
+    <string>Her Hakkı Saklıdır © 2024</string>
+   </property>
+  </action>
+  <action name="actionV_ZYONUMUZ_Kan_ba_n_n_yayg_nla_t_herkesin_ba_oldu_u_ve_hi_bir_hastan_n_kan_ihtiyac_ya_amayaca_bir_d_nya_yaratmak">
+   <property name="text">
+    <string>VİZYONUMUZ;
+Kan bağışının yaygınlaştığı, herkesin bağışçı olduğu ve hiçbir hastanın kan ihtiyacı yaşamayacağı bir dünya yaratmak.</string>
+   </property>
+  </action>
+  <action name="actionHer_Hakk_Sakl_d_r_2025">
+   <property name="text">
+    <string>Her Hakkı Saklıdır © 2024 </string>
+   </property>
+  </action>
+  <action name="action_leti_im">
+   <property name="text">
+    <string>İletişim;</string>
+   </property>
+  </action>
+  <action name="actionE_POSTA_dilarabebek4_gmail_com">
+   <property name="text">
+    <string>E-POSTA: dilarabebek4@gmail.com</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
